@@ -142,21 +142,59 @@ aux = 0
 #     # lista[aux] = aux
 #     aux = aux + 1
 
-aux = len(lista)-1
-while(aux >= 0):
-    print(aux)
-    # print(lista[aux])
-    # lista[aux] = aux
-    aux = aux - 1
+# aux = len(lista)-1
+# while(aux >= 0):
+#     print(aux)
+#     # print(lista[aux])
+#     # lista[aux] = aux
+#     aux = aux - 1
 
-aux1 = 0
-aux2 = 10
+# aux1 = 0
+# aux2 = 10
 
-while((aux1<5) and (aux2<12)):
-    print("aux1", aux1)
-    print("aux2", aux2)
-    aux1 = aux1 + 1
-    aux2 = aux2 + 1
+# while((aux1<5) and (aux2<12)):
+#     print("aux1", aux1)
+#     print("aux2", aux2)
+#     aux1 = aux1 + 1
+#     aux2 = aux2 + 1
 
 
-print(lista)
+# print(lista)
+
+## FUNCIONES
+
+# print(len("hola"))
+
+def mostrarMensaje(nombre):
+    aux = "Hola "+nombre+"!!"
+    return aux
+print(mostrarMensaje("juan"))
+
+def sumar(a,b):
+    resultado = a + b
+    return resultado
+
+# print(sumar(6,1))
+
+## 4 + 1
+## 7 + 1
+
+def sumar(a,b=1):
+    resultado = a + b
+    return resultado
+
+result = sumar(8)
+
+print(result)
+
+def sumar(a,b=1):
+    resultado = a + b
+    return resultado, a, b
+
+print(sumar(2,3))
+
+result1, result2, result3 = sumar(2,3)
+print(result1)
+print(result2)
+print(result3)
+
